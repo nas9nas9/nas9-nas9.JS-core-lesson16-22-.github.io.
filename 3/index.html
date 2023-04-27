@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            margin: 150px auto;
+            width: 800px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container-box {
+            width: 150px;
+            height: 150px;
+            position: relative;
+          
+        }
+
+        .container-box_elem {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            right: 0;
+        }
+
+        .container-box:nth-of-type(1) .container-box_elem {
+            background-color: rgb(251, 5, 5);
+        }
+
+        .container-box:nth-of-type(2) .container-box_elem {
+            background-color: rgb(1, 130, 235);
+        }
+
+        .container-box:nth-of-type(3) .container-box_elem {
+            background-color: rgb(251, 239, 19);
+        }
+
+        .container-box:nth-of-type(4) .container-box_elem {
+            background-color: rgb(45, 38, 255);
+        }
+
+        .container-box:nth-of-type(5) .container-box_elem {
+            background-color: rgb(90, 100, 108);
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(255, 255, 255);
+            z-index: -1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-box">
+            <div class="container-box_elem"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_elem"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_elem"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_elem"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_elem"></div>
+        </div>
+    </div>
+
+    <div class="modal"></div>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
